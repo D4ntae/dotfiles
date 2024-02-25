@@ -25,6 +25,8 @@ source ~/.config/zsh/aliases.zsh
 source ~/.config/zsh/envs.zsh
 # Plugins
 source ~/.config/zsh/plugins.zsh
+# Functions
+source "~/.config/zsh/functions.zsh"
 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
