@@ -7,5 +7,6 @@ alias ta='tmux attach -t'
 alias fw_decompress='python3 /home/dantae/repos/siemens_lzp3/fw_decompress.py'
 alias crunch='/home/dantae/repos/crunch-3.6/crunch'
 alias cat='bat'
+alias myip="curl http://ipecho.net/plain; echo"
 
 
