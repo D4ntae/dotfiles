@@ -11,35 +11,21 @@ HISTSIZE=1000
 SAVEHIST=1000
 setopt autocd
 bindkey -e
-# End of lines configured by zsh-newuser-install
-# The following lines were added by compinstall
 zstyle :compinstall filename '/home/dantae/.zshrc'
 
 autoload -Uz compinit
 compinit
-# End of lines added by compinstall
 
-source /home/dantae/repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-export TERM=xterm-256color
-# PATH
-export PATH=$PATH:/home/dantae/scripts:/home/dantae/.local/bin:/home/dantae/links:/home/dantae/go/bin:/home/dantae/.cargo/bin
-export EDITOR=nvim
 
 source ~/.local/share/icons-in-terminal/icons_bash.sh
 
 # Aliases
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
-alias tmux='TERM=xterm-256color tmux'
-alias vim='nvim'
-alias ta='tmux attach -t'
-alias fw_decompress='python3 /home/dantae/repos/siemens_lzp3/fw_decompress.py'
-alias crunch='/home/dantae/repos/crunch-3.6/crunch'
-alias cat='bat'
+source ~/.config/zsh/aliases.zsh
+# Environment variables
+source ~/.config/zsh/envs.zsh
+# Plugins
+source ~/.config/zsh/plugins.zsh
 
-source /home/dantae/repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/repos/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

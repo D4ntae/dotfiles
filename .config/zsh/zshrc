@@ -24,8 +24,8 @@ source ~/.config/zsh/aliases.zsh
 # Environment variables
 source ~/.config/zsh/envs.zsh
 # Plugins
+source ~/.config/zsh/plugins.zsh
 
-source ~/.config/zsh/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
