@@ -1,0 +1,9 @@
+#!/bin/bash
+
+PACKAGES=$(pacman -Qqe)
+
+SELECTED=$(gum choose --no-limit --cursor-prefix="[ ] " --selected-prefix="[X] " --unselected-prefix="[ ] " --cursor.foreground="81" --selected.foreground="81" $PACKAGES)
+
+if [[ -n "$SELECTED" ]]; then
+    sudo pacman -Rns $SELECTED
+fi

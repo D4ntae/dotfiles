@@ -1,0 +1,17 @@
+#!/bin/bash
+
+OPTIONS=$(printf "integrated\nnvidia\nhybrid")
+CURRENT=$(optimus-manager --stat | grep Current | awk '{print $5}')
+
+if [ "$CURRENT" == "integrated" ]; then
+    gum style --foreground 81 --border-foreground 81 --border normal --align center --width 25 "Current GPU: intel";
+elif [ "$CURRENT" == "hybrid" ]; then
+    gum style --foreground 127 --border-foreground 127 --border normal --align center --width 25 "Current GPU: hybrid";
+else
+    gum style --foreground 82 --border-foreground 82 --border normal --align center --width 25 "Current GPU: nvidia"
+fi
+
+
+SELECTED=$(gum choose --cursor.foreground="81" --selected.foreground="81" $OPTIONS)
+
+gum spin -s points --title "Changing GPU..." --spinner.foreground="81" -- optimus-manager --switch $SELECTED --no-confirm
