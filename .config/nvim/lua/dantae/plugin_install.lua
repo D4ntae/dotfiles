@@ -5,6 +5,7 @@ require('lazy').setup({
   'tpope/vim-rhubarb',
   'elkowar/yuck.vim',
   'm00qek/baleia.nvim',
+  'tpope/vim-obsession',
 
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',

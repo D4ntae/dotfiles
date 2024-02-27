@@ -8,5 +8,12 @@ alias fw_decompress='python3 /home/dantae/repos/siemens_lzp3/fw_decompress.py'
 alias crunch='/home/dantae/repos/crunch-3.6/crunch'
 alias cat='bat'
 alias myip="curl http://ipecho.net/plain; echo"
-
-
+alias t="tmux-sessionizer"
+alias tl="tmux-sessionizer list"
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias gs="git status"
+alias gc="git commit"
+alias ga="git add"
+alias cp="cp -i"
